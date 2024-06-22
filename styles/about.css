@@ -1,0 +1,387 @@
+#Home {
+
+  width: 100%;
+  height: auto;
+
+  background-color: var(--Bg-black);
+  position: relative;
+}
+
+#Home .title-home,
+#Home .text-about,
+#Home .text-about-more,
+#Home .section-about,
+#Home .text-about-footer {
+  margin: 0 1rem;
+}
+
+
+#header {
+  width: 100%;
+  height: 6.25rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 1rem;
+
+}
+
+.icon-menu svg path {
+  fill: var(--text-gray);
+}
+
+.image-about-home {
+  position: absolute;
+
+  top: 6.25rem;
+  right: 0;
+}
+
+.title-home {
+  margin: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.title-home h1 {
+  color: var(--text-white);
+  font-family: var(--Ibm-condensed);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.64px;
+
+  margin-bottom: 1rem;
+}
+
+.title-home h1 span {
+  color: var(--text-white);
+  font-family: var(--Ibm-mono);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.64px;
+  position: relative;
+}
+
+.title-home p {
+  color: #828282;
+  font-family: var(--Ibm-condensed);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+}
+
+.text-about p {
+  color: var(--text-white);
+  font-family: var(--Ibm-condensed);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+
+  margin-bottom: 1.25rem;
+}
+
+.text-about-more h2 {
+  color: var(--Bg);
+  font-family: var(--Ibm-condensed);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 36px */
+
+  margin-bottom: 1rem;
+}
+
+.text-about-more p {
+  color: var(--text-gray);
+  font-family: var(--Ibm-condensed);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+
+  margin-bottom: 1.25rem;
+}
+
+.about-cards {
+  display: flex;
+  height: auto;
+  padding: 30px 33px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+
+  border-radius: 8px;
+  background-color: var(--cards-black);
+
+  margin: 0 1rem 1.25rem;
+}
+
+.about-cards h3 {
+  color: var(--text-white);
+  font-family: var(--Ibm-condensed);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+}
+
+.about-cards p, .text-about-footer p {
+  color: #EDEDED;
+  font-family: var(--Ibm-condensed);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+
+.text-about-footer p span {
+  font-weight: 700;
+}
+
+.text-about-footer {
+  margin-top: 2.25rem;
+  padding-bottom: 6.25rem;
+}
+
+.image-about-sheo {
+  background-image: url(/assets/Sheo-Mobile-About.svg);
+  width: 300px;
+  height: 520px;
+  flex-shrink: 0;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#Footer {
+  background-image: linear-gradient(140deg, rgba(117, 116, 116, 0.70) 19.17%, rgba(219, 218, 218, 0.70) 85.79%), url(/assets/FundoFooter.png);
+}
+
+#Footer h3 {
+  color: var(--text-black);
+  font-family: var(--Ibm-condensed);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+}
+
+#Footer p, .footer-contact a {
+  color: var(--text-black);
+  font-family: var(--Ibm-condensed);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 19.6px */
+}
+
+.footer-contact svg path {
+  fill: var(--text-black);
+}
+
+.svg-footer-desktop {
+  display: none;
+}
+
+.image-about-sheo-desktop {
+  display: none;
+}
+
+/* .image-about-sheo {
+  display: none;
+} */
+
+@media (min-width: 769px) {
+  .icon-menu {
+    display: none;
+  }
+
+  .svg-footer-mobile {
+    display: none;
+  }
+
+  .svg-footer-desktop{
+    display: inline-flex;
+  }
+
+  /* header fixo padrãp de quase todas as pages */
+  #header-links {
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: center;
+    
+    z-index: 2;
+  }
+
+  #header-links ul {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 26px;
+
+    margin-right: 1.5rem;
+
+    list-style: none;
+  }
+
+  #header-links li {
+    font-family: var(--Ibm-condensed);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  #header-links ul li a {
+    text-decoration: none;
+    color: var(--text-white);
+  }
+
+  .home-button-desktop p {
+    color: var(--text-black);
+    font-family: var(--Ibm-condensed);
+  }
+
+  .home-button-desktop {
+    display: inline-flex;
+    height: 40px;
+    padding: 0px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: var(--Bg);
+  }
+  /* Fim do header padrão */
+  .container-about-home {
+    display: flex;
+    max-width: 39rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+
+    margin: 6.62rem 1rem 0;
+  }
+
+  .container-about-home .title-home h1 {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.28px;
+  }
+
+  .container-about-home .title-home h1 span {
+    font-family: var(--Ibm-mono);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.28px;
+  }
+
+  .container-about-home .title-home p {
+    color: #828282;
+    font-family: var(--Ibm-condensed);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+  }
+
+  .container-about-home .text-about p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 30px */
+  }
+
+  #Home .text-about-more {
+    padding: 0 4.75rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 3.25rem;
+  }
+
+  .text-about-more h2 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 72px */
+  }
+
+  .text-about-more p {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+  }
+
+  #Home .section-about {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+  }
+
+  .text-about-footer p {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+  }
+
+  .text-about-footer{
+    grid-column: 2 / span 3;
+    grid-row: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-cards h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 30px */
+  }
+
+  .about-cards p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+  }
+
+  .image-about-sheo {
+    display: none;
+  }
+
+  .image-about-sheo-desktop {
+    display: inline-flex;
+
+    position: absolute;
+
+    background-image: url(/assets/image-about-sheo-desktop.svg);
+    width: 720px;
+    height: 1191px;
+    flex-shrink: 0;
+    top: 0;
+    right: 50px;
+  }
+}
